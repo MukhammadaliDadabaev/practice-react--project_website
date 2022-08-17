@@ -1,10 +1,12 @@
-// import pages
+// pages
 import AboutUs from "./pages/AboutUs";
+// Global style
+import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
   return (
     <div className="App">
-      <h1>e-Learnihg</h1>
+      <GlobalStyle />
       <AboutUs />
     </div>
   );
