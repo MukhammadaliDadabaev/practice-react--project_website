@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: #2a2e40;
+    font-family: 'SF Pro Display', sans-serif;
   }
   button {
     padding: 1rem 2rem;
@@ -15,11 +16,11 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
     cursor: pointer;
     background-color: transparent;
-    border: 3px solid #ffe45c;
+    border: 3px solid #30bee1;
     color: #fff;
     transition: all 0.3s linear;
     &:hover {
-      background-color: #ffe45c;
+      background-color: #30bee1;
       color: #2a2e35;
     }
   }
@@ -35,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
   }
   span {
     font-weight: bold;
-    color: #ffe45c;
+    color: #30bee1;
   }
   a {
     font-size: 1.1rem;
