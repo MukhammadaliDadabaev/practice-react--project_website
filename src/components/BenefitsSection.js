@@ -34,7 +34,7 @@ const Benefits = styled(About)`
   }
   h3 {
     width: 70%;
-    margin: 1rem 0 0 5rem;
+    margin: 0.4rem 0 0 5rem;
     padding: 1rem;
     font-size: 1.4rem;
     background-color: #fff;
