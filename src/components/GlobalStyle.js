@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   }
   h2 {
     font-weight: lighter;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   h3 {
     color: #fff;
