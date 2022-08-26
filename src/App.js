@@ -2,6 +2,7 @@
 import AboutUs from "./pages/AboutUs";
 import Nav from "./components/Nav";
 import Courses from "./pages/Courses";
+import CourseDetail from "./pages/CourseDetail";
 import ContactUs from "./pages/ContactUs";
 // Global style
 import GlobalStyle from "./components/GlobalStyle";
@@ -17,8 +18,11 @@ function App() {
         <Route path="/" exact>
           <AboutUs />
         </Route>
-        <Route path="/courses">
+        <Route path="/courses" exact>
           <Courses />
+        </Route>
+        <Route path="/courses/:id">
+          <CourseDetail />
         </Route>
         <Route path="/contact">
           <ContactUs />

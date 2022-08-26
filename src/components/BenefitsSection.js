@@ -29,18 +29,18 @@ const Benefits = styled(About)`
   flex-direction: row-reverse;
   h2 {
     margin-left: 5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     color: #30bee1;
   }
   h3 {
-    width: 70%;
-    margin: 0.4rem 0 0 5rem;
-    padding: 1rem;
-    font-size: 1.4rem;
+    width: 80%;
+    margin: 0.3rem 0 0 5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
     background-color: #fff;
     color: #000;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    border-bottom: 8.5px solid #30bee1;
+    border-bottom: 7px solid #30bee1;
   }
 `;
 
