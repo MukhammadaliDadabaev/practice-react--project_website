@@ -3,25 +3,54 @@ import React from "react";
 import homeIntro from "../img/Biznes.jpg";
 // impotr styled
 import { About, Description, Hide, Image } from "../styles";
+// framer motion
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
+  // ANIMATED
+  const titleAnim = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { duration: 1.8 },
+    },
+  };
+
+  const container = {
+    hidden: { x: 100, opacity: 0.7 },
+    show: {
+      x: 0,
+      transition: {
+        duration: 1.5,
+        ease: "easeOut",
+        staggerChildren: 1,
+        when: "beforeChildren",
+      },
+    },
+  };
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="title"
+        >
           <Hide>
-            <h2>Be educated so that</h2>
+            <motion.h2 variants={titleAnim} initial="hidden" animate="show">
+              Be educated so that
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>
-              {" "}
+            <motion.h2>
               you <span>can change</span>{" "}
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>the world</h2>
+            <motion.h2>the world</motion.h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum,
           rerum.
