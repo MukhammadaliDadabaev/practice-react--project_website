@@ -9,7 +9,9 @@ const BenefitsSection = () => {
   return (
     <Benefits>
       <Description>
-        <h2>High-Quality Learning System</h2>
+        <h2>
+          High-Quality <br /> Learning System
+        </h2>
         <div className="benefit">
           <h3>Online platform</h3>
           <h3>High experienced and talented mentors</h3>
@@ -30,13 +32,14 @@ const Benefits = styled(About)`
   h2 {
     margin-left: 5rem;
     padding-bottom: 3rem;
+    line-height: 55px;
     color: #30bee1;
   }
   h3 {
-    width: 80%;
-    margin: 0.3rem 0 0 5rem;
+    width: 70%;
+    margin: 0.5rem 0 0 5rem;
     padding: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     background-color: #fff;
     color: #000;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
